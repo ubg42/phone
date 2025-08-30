@@ -20,9 +20,9 @@ header {
   padding: 10px 20px;
   color: white;
   display: flex;
-  flex-direction: column;  /* stack items vertically */
+  flex-direction: column; /* stack vertically */
   align-items: center;
-  gap: 8px;
+  gap: 6px; /* spacing between items */
 }
 
 #searchBar {
@@ -30,9 +30,17 @@ header {
   padding: 6px 10px;
   border-radius: 5px;
   border: none;
-  width: 100%;
-  max-width: 300px;
-  margin-bottom: 10px;
+  width: 90%;        /* responsive width */
+  max-width: 350px;  /* limit for large tablets */
+  margin: 0;
+}
+
+.form, .txt {
+  margin: 0;
+  font-size: 20px; /* smaller for tablets */
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .form {
@@ -43,7 +51,7 @@ header {
 }
 
 .txt {
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: underline;
   text-align: center;
 }
